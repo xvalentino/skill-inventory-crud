@@ -1,0 +1,9 @@
+<a href="/skills">Skill Index</a>
+
+<h1><%= @skill.name %> </h1>
+
+<p><%= @skill.status %> </p>
+
+<form action="/skills/<%= @skill.id %>/edit" method="get">
+  <input type="submit" value="edit"/>
+</form> 

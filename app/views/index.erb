@@ -1,1 +1,5 @@
 <h1>My Skills</h1>
+
+<% @skills.each do |skill| %>
+  <h3>(<%= skill.id %>) <a href="/skills/<%= skill.id %>"><%= skill.name %></a></h3>
+<% end %>
